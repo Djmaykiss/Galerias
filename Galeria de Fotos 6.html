@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--start styles -->
+<style>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item {
+    max-width: 300px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el efecto de desvanecimiento */
+.item:not(:first-child) {
+    opacity: 0;
+}
+
+/* Estilos adicionales según sea necesario */
+
+</style>
+<!--and styles -->
+
+<!--start navbar -->
+    <nav class="navbar">
+        <div class="logo">Markingwebs</div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./Galeria de Fotos 1.html">Galeria 1</a></li>
+            <li><a href="./Galeria de Fotos 2.html">Galeria 2</a></li>
+            <li><a href="./Galeria de Fotos 3.html">Galeria 3</a></li>
+            <li><a href="./Galeria de Fotos 4.html">Galeria 4</a></li>
+            <li><a href="./Galeria de Fotos 5.html">Galeria 5</a></li>
+            <li><a href="./Galeria de Fotos 7.html">Galeria 7</a></li>
+            <li><a href="./Galeria de Fotos 8.html">Galeria 8</a></li>
+            <li><a href="./Galeria de Fotos 9.html">Galeria 9</a></li>
+            <li><a href="./Galeria de Fotos 10.html">Galeria 10</a></li>
+            <li><a href="./Galeria de Fotos 11.html">Galeria 11</a></li>
+            <li><a href="./Galeria de Fotos 12.html">Galeria 12</a></li>
+        </ul>
+        <div class="menu-icon">&#9776;</div>
+    </nav>
+      <!--and navbar -->
+
+        <!--start content -->
+        <div class="menu-icon">&#9776;</div>
+    </nav>
+
+    <h1>Galeria 6</h1>
+    <div class="container">
+        <h1>Galería de Fotos con Efectos</h1>
+        <p>Explora nuestra impresionante galería de fotos con efectos visuales sorprendentes. Cada imagen se presenta de manera única utilizando transiciones suaves que hacen que la experiencia sea visualmente atractiva. Sumérgete en un mundo de colores, formas y momentos capturados en estas fotografías excepcionales. Disfruta de la belleza y la creatividad en cada imagen mientras navegas por nuestra galería.</p>
+
+        <div class="gallery">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1549556289-9706946b9c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpc2FqZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80.jpg" alt="Foto 1">
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1509088960169-ecb53eda6ed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80.jpg" alt="Foto 2">
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80.jpg" alt="Foto 3">
+            </div>
+            <!-- Agrega más elementos de la galería según sea necesario -->
+        </div>
+    </div>
+   
+    
+    <!--and content -->
+
+    <script>
+        // JavaScript para el efecto de desvanecimiento
+const items = document.querySelectorAll('.item');
+let currentIndex = 0;
+
+function showItem(index) {
+    items[index].style.opacity = 1;
+    items[currentIndex].style.opacity = 0;
+    currentIndex = index;
+}
+
+// Configura un temporizador para cambiar automáticamente las imágenes cada 3 segundos
+setInterval(() => {
+    const nextIndex = (currentIndex + 1) % items.length;
+    showItem(nextIndex);
+}, 2000);
+
+    </script>
+    <script src="./main.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                Programador: <a href="https://djmaykiss.github.io/links/" target="_blank">Michael A. Perez</a>
+                <br>
+                Copyright © 2023., Ltd. Todos los derechos reservados. <a href="https://www.markingwebs.com/" target="_blank">Markingwebs</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

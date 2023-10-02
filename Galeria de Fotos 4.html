@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <style>
+/* Estilos para la galería de videos con carrusel */
+.video-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Ajusta el tamaño del video para que se ajuste al ancho */
+.carousel-item iframe {
+    width: 110%; /* Ancho al 100% del contenedor */
+    height: 100xp; /* Altura al 100% del contenedor para que el video se muestre completo */
+    border: none;
+}
+
+/* Estilos para los botones de navegación */
+.carousel-controls {
+    text-align: center; /* Centra los botones horizontalmente */
+    margin-top: 10px; /* Agrega un espacio entre el video y los botones */
+}
+
+.carousel-control {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para los botones de navegación */
+.carousel-control-prev::before {
+    content: "\2190"; /* Código Unicode de la flecha izquierda */
+}
+
+.carousel-control-next::before {
+    content: "\2192"; /* Código Unicode de la flecha derecha */
+}
+
+    </style>
+
+
+<!--start navbar -->
+<nav class="navbar">
+    <div class="logo">Markingwebs</div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./Galeria de Fotos 1.html">Galeria 1</a></li>
+        <li><a href="./Galeria de Fotos 2.html">Galeria 2</a></li>
+        <li><a href="./Galeria de Fotos 3.html">Galeria 3</a></li>
+        <li><a href="./Galeria de Fotos 5.html">Galeria 5</a></li>
+        <li><a href="./Galeria de Fotos 6.html">Galeria 6</a></li>
+        <li><a href="./Galeria de Fotos 7.html">Galeria 7</a></li>
+        <li><a href="./Galeria de Fotos 8.html">Galeria 8</a></li>
+        <li><a href="./Galeria de Fotos 9.html">Galeria 9</a></li>
+        <li><a href="./Galeria de Fotos 10.html">Galeria 10</a></li>
+        <li><a href="./Galeria de Fotos 11.html">Galeria 11</a></li>
+        <li><a href="./Galeria de Fotos 12.html">Galeria 12</a></li>
+    </ul>
+    <div class="menu-icon">&#9776;</div>
+</nav>
+  <!--and navbar -->
+    <h1>Galeria 4</h1>
+    <div class="content">
+        <h2>Galería de Videos</h2>
+        <p>Navega a través de nuestra galería de videos utilizando el carrusel. Haz clic en las flechas para ver los videos en secuencia.</p>
+
+        <div class="video-carousel">
+            <div class="carousel-item">
+                <iframe width="702" height="395" src="https://www.youtube.com/embed/CdPUdmk8y8A" title="Ya NO eres BÁSICO en Inglés Si Sabes estas 12 Expresiones✔️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            <div class="carousel-item">
+                <iframe width="702" height="395" src="https://www.youtube.com/embed/a6EUPdIH5U8" title="6 Meses o Menos  Para Aprender Inglés por TU CUENTA SIN IMPORTAR Tu Nivel | Recursos Gratis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            <div class="carousel-item">
+                <iframe width="702" height="395" src="https://www.youtube.com/embed/EyYW0ZkgdrM" title="Revelo Como Dominé Entender A lo Nativos en Inglés" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            <!-- Agrega más elementos de carrusel con iframes de videos de YouTube según sea necesario -->
+        </div>
+        
+        <!-- Flechas de navegación -->
+        <div class="carousel-controls">
+            <div class="carousel-control carousel-control-prev" onclick="prevSlide()">&#8249;</div>
+            <div class="carousel-control carousel-control-next" onclick="nextSlide()">&#8250;</div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+
+function showItem(index) {
+    if (index < 0) {
+        currentIndex = items.length - 1;
+    } else if (index >= items.length) {
+        currentIndex = 0;
+    }
+
+    items.forEach((item, i) => {
+        if (i === currentIndex) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex++;
+    showItem(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex--;
+    showItem(currentIndex);
+}
+
+showItem(currentIndex); // Mostrar el primer elemento al cargar la página
+
+    </script>
+
+    
+    <script src="./main.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                Programador: <a href="https://djmaykiss.github.io/links/" target="_blank">Michael A. Perez</a>
+                <br>
+                Copyright © 2023., Ltd. Todos los derechos reservados. <a href="https://www.markingwebs.com/" target="_blank">Markingwebs</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

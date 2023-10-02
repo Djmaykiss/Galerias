@@ -1,0 +1,42 @@
+
+
+
+Existen varios tipos de galerías que puedes utilizar en páginas web, y la elección depende de tus necesidades específicas y del estilo de tu sitio. Aquí tienes algunos ejemplos de tipos comunes de galerías:
+
+1. Galería de Imágenes Simple: Una serie de imágenes dispuestas en una cuadrícula o fila, a menudo con miniaturas. Los usuarios pueden hacer clic en las imágenes para verlas en tamaño completo.
+
+2. Galería de Imágenes con Lightbox: Similar a la galería simple, pero al hacer clic en una imagen, esta se muestra en una ventana emergente (lightbox) que oscurece el fondo. Esto permite una vista más grande y enfocada de la imagen.
+
+3. Carrusel de Imágenes: Una serie de imágenes que se muestran una a la vez en una ubicación visible, y los usuarios pueden avanzar o retroceder a la siguiente imagen. A menudo se utilizan flechas o botones de navegación.
+
+4. Galería de Videos: Una colección de videos que los usuarios pueden reproducir directamente desde la página. Puede tener miniaturas de videos y controles de reproducción.
+
+5. Galería de Portafolio: Diseñada específicamente para mostrar proyectos o trabajos anteriores. Cada proyecto se presenta con una imagen y una descripción.
+
+6. Galería de Fotos con Efectos: Galerías que utilizan efectos de transición como desvanecimiento, deslizamiento, zoom, etc., para cambiar entre imágenes de manera más visualmente atractiva.
+
+7. Galería de Fotos en Mosaico: Las imágenes se muestran en un mosaico, a menudo con un diseño irregular. Esto puede crear un aspecto único y artístico.
+
+8. Galería de Fotos en 3D: Utiliza efectos 3D para mostrar imágenes de manera interactiva y envolvente, a menudo con giros y zoom.
+
+9. Galería de Fotos en Parallax: Combina efectos de parallax con imágenes para crear un efecto visualmente atractivo a medida que los usuarios desplazan la página.
+
+10. Galería de Fotos de Producto: Utilizada en sitios de comercio electrónico para mostrar productos con imágenes, descripciones y detalles adicionales.
+
+11. Galería de Fotos de Eventos: Ideal para sitios de eventos o fotografía de eventos, muestra imágenes de eventos anteriores o próximos.
+
+12. Galería de Fotos de Redes Sociales: Muestra fotos de redes sociales como Instagram o Facebook en tu sitio web.
+
+
+
+
+fotos
+
+1. https://images.unsplash.com/photo-1549556289-9706946b9c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpc2FqZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80.jpg
+
+2. https://images.unsplash.com/photo-1509088960169-ecb53eda6ed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80.jpg
+
+
+3. https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80.jpg
+
+
